@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Code</title>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background-color: aliceblue;
+            height: 100vh;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main{
+            flex: 11;
+        }
+
+        h1{
+            text-align: center;
+            color: cornflowerblue;
+        }
+
+        p{
+            text-align: center;
+            color: gray;
+            font-style: italic;
+        }
+
+        section{
+            margin: 0 auto;
+            width: 80%;
+            
+        }
+
+        footer{
+            text-align: center;
+            color: #bbb;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Learning Code
+        </h1>
+        <p>Yoki2004</p>
+        <section>
+            Welcome to my coding world.
+            <a href="https://github.com/yoki2004/learning-code.git">my github address</a>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script>
+        document.querySelector('#footer').innerHTML = "@"+new Date().getFullYear()
+    </script>
+</body>
+</html>
